@@ -1,8 +1,8 @@
-// Load mongoose
 const mongoose = require('mongoose')
 
-// Create model and write schema
-mongoose.model('Book', {
+const { Schema } = mongoose
+
+const bookSchema = new Schema({
     title: {
         type: String,
         require: true
@@ -20,3 +20,5 @@ mongoose.model('Book', {
         require: false
     }
 })
+
+module.exports = bookSchema
