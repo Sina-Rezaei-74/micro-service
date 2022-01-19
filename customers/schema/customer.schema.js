@@ -1,8 +1,8 @@
-// Load mongoose
 const mongoose = require('mongoose')
 
-// Create model and write schema
-mongoose.model('Customer', {
+const { Schema } = mongoose
+
+const customerSchema = new Schema({
     name: {
         type: String,
         require: true
@@ -16,3 +16,5 @@ mongoose.model('Customer', {
         require: true
     }
 })
+
+module.exports = customerSchema

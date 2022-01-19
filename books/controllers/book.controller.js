@@ -1,4 +1,4 @@
-const bookModel = require('./../models/book.mode')
+const bookModel = require('./../models/book.model')
 
 module.exports = {
     async get(req, res) {
